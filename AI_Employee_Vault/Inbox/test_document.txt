@@ -1,0 +1,11 @@
+This is a test document for the Personal AI Employee Bronze Tier.
+
+Created: 2026-03-29
+Purpose: Test the File System Watcher functionality
+
+This file should be:
+1. Detected by the watcher
+2. Copied to the Inbox folder
+3. An action file created in Needs_Action folder
+
+Test content for processing.

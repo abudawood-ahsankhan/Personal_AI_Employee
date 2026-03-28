@@ -1,0 +1,174 @@
+# ===========================================
+# SECURITY - Never commit sensitive files
+# ===========================================
+
+# Environment files with credentials
+.env
+.env.local
+.env.*.local
+
+# API tokens and credentials
+*.pem
+*.key
+credentials.json
+token.json
+tokens/
+secrets/
+
+# Session files
+*.session
+session/
+whatsapp_session/
+browser_sessions/
+
+# ===========================================
+# Python
+# ===========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# ===========================================
+# IDE & Editors
+# ===========================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.*.auto-save-number
+
+# ===========================================
+# OS Files
+# ===========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===========================================
+# Logs & Temporary Files
+# ===========================================
+
+# Application logs
+Logs/*.log
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# ===========================================
+# Obsidian Specific (Optional)
+# ===========================================
+
+# Obsidian plugins (if not tracking in repo)
+.obsidian/plugins/
+
+# Obsidian sync conflicts
+*.conflict
+
+# ===========================================
+# Project Specific
+# ===========================================
+
+# Drop folder contents (optional - uncomment if desired)
+# Drop/*
+# Inbox/*
+
+# Processed files tracking
+.processed_hashes
+.file_registry.json
+
+# ===========================================
+# Documentation (Optional)
+# ===========================================
+
+# Keep these if you want them local only
+# Briefings/*.md
+# Accounting/*.md
