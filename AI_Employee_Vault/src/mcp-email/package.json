@@ -1,0 +1,25 @@
+{
+  "name": "mcp-email",
+  "version": "1.0.0",
+  "description": "Email MCP Server for Personal AI Employee Gold Tier",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "email",
+    "smtp",
+    "gmail",
+    "ai-employee"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "nodemailer": "^6.9.0",
+    "dotenv": "^16.3.1"
+  }
+}

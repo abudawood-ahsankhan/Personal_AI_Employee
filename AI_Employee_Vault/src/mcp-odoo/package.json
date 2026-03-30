@@ -1,0 +1,26 @@
+{
+  "name": "mcp-odoo",
+  "version": "1.0.0",
+  "description": "Odoo Community ERP MCP Server for Personal AI Employee Gold Tier",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "odoo",
+    "erp",
+    "accounting",
+    "ai-employee"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "crypto-js": "^4.2.0"
+  }
+}

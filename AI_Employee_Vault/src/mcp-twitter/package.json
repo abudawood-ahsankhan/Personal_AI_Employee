@@ -1,0 +1,26 @@
+{
+  "name": "mcp-twitter",
+  "version": "1.0.0",
+  "description": "Twitter (X) MCP Server for Personal AI Employee Gold Tier",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "twitter",
+    "x",
+    "social",
+    "ai-employee"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "twitter-api-v2": "^1.15.0"
+  }
+}

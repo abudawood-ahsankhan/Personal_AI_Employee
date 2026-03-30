@@ -3,7 +3,25 @@
     "allow": [
       "Bash(mkdir *)",
       "Bash(python *)",
-      "Bash(py *)"
+      "Bash(py *)",
+      "Bash(ollama *)",
+      "Bash(pip install *)",
+      "Bash(pip show *)",
+      "Bash(timeout *)",
+      "Bash(tasklist)",
+      "Bash(findstr *)",
+      "Bash(python3 *)",
+      "Bash(\"c:\\users\\lenovo\\appdata\\local\\python\\pythoncore-3.14-64\\python.exe\" *)",
+      "Bash(c:\\users\\lenovo\\appdata\\local\\python\\pythoncore-3.14-64\\python.exe *)",
+      "Bash(\"c:\\users\\lenovo\\appdata\\local\\programs\\ollama\\ollama.exe\" *)",
+      "Read(C:\\Users\\LEnovo/**)",
+      "Bash(curl *)",
+      "Bash(c:\\users\\lenovo\\appdata\\local\\python\\bin\\python.exe *)",
+      "Bash(e:\\hackathon *)",
+      "Bash(cmd *)",
+      "Bash(powershell *)",
+      "Bash(echo.)",
+      "Bash(start *)"
     ]
   },
   "$version": 3
