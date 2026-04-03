@@ -1,0 +1,10 @@
+2026-03-29 00:12:57,598 - FilesystemWatcher - INFO - FilesystemWatcher initialized
+2026-03-29 00:12:57,598 - FilesystemWatcher - INFO - Vault path: ..
+2026-03-29 00:12:57,599 - FilesystemWatcher - INFO - Check interval: 30s
+2026-03-29 00:12:57,599 - FilesystemWatcher - INFO - Drop folder: ..\..\Drop
+2026-03-29 00:12:57,601 - FilesystemWatcher - INFO - Starting FilesystemWatcher main loop
+2026-03-29 00:12:57,601 - FilesystemWatcher - INFO - Press Ctrl+C to stop
+2026-03-29 00:12:57,609 - FilesystemWatcher - INFO - New file detected: test_document.txt (297 bytes)
+2026-03-29 00:12:57,610 - FilesystemWatcher - INFO - Found 1 new item(s) to process
+2026-03-29 00:12:57,613 - FilesystemWatcher - INFO - Copied file to Inbox: test_document.txt
+2026-03-29 00:12:57,614 - FilesystemWatcher - INFO - Created action file: FILE_906b5a86_20260329_001257.md

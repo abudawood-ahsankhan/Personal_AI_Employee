@@ -8,7 +8,7 @@ Logs all actions, decisions, and state changes for compliance and debugging.
 import json
 import logging
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any
 from dataclasses import dataclass, asdict
 import hashlib

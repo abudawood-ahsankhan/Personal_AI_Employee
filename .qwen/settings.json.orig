@@ -1,7 +1,22 @@
 {
-  "permissions": {
-    "allow": [
-      "Bash(mkdir *)"
+  "env": {
+    "BAILIAN_API_KEY": ""
+  },
+  "modelProviders": {
+    "openai": [
+      {
+        "id": "qwen3.5-plus",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "envKey": "BAILIAN_API_KEY"
+      }
     ]
+  },
+  "security": {
+    "auth": {
+      "selectedType": "openai"
+    }
+  },
+  "model": {
+    "name": "qwen3.5-plus"
   }
 }

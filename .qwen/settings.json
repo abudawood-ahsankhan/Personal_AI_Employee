@@ -1,28 +1,31 @@
 {
-  "permissions": {
-    "allow": [
-      "Bash(mkdir *)",
-      "Bash(python *)",
-      "Bash(py *)",
-      "Bash(ollama *)",
-      "Bash(pip install *)",
-      "Bash(pip show *)",
-      "Bash(timeout *)",
-      "Bash(tasklist)",
-      "Bash(findstr *)",
-      "Bash(python3 *)",
-      "Bash(\"c:\\users\\lenovo\\appdata\\local\\python\\pythoncore-3.14-64\\python.exe\" *)",
-      "Bash(c:\\users\\lenovo\\appdata\\local\\python\\pythoncore-3.14-64\\python.exe *)",
-      "Bash(\"c:\\users\\lenovo\\appdata\\local\\programs\\ollama\\ollama.exe\" *)",
-      "Read(C:\\Users\\LEnovo/**)",
-      "Bash(curl *)",
-      "Bash(c:\\users\\lenovo\\appdata\\local\\python\\bin\\python.exe *)",
-      "Bash(e:\\hackathon *)",
-      "Bash(cmd *)",
-      "Bash(powershell *)",
-      "Bash(echo.)",
-      "Bash(start *)"
+  "env": {
+    "BAILIAN_API_KEY": ""
+  },
+  "modelProviders": {
+    "openai": [
+      {
+        "id": "qwen3.5-plus",
+        "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "envKey": "BAILIAN_API_KEY"
+      }
     ]
   },
-  "$version": 3
+  "security": {
+    "auth": {
+      "selectedType": "qwen-oauth"
+    }
+  },
+  "model": {
+    "name": "coder-model"
+  },
+  "$version": 3,
+  "permissions": {
+    "allow": [
+      "Bash(e:\\hackathon *)",
+      "Bash(dir *)",
+      "Bash(c:\\users\\lenovo\\appdata\\local\\python\\bin\\python.exe *)",
+      "Bash(mkdir *)"
+    ]
+  }
 }

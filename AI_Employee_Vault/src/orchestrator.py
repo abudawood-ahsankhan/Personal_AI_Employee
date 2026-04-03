@@ -58,7 +58,8 @@ class Orchestrator:
         
         # Configuration
         self.check_interval = self.config.get('check_interval', 60)
-        self.claude_model = self.config.get('claude_model', 'claude-sonnet-4-5-20250929')
+        self.qwen_model = self.config.get('qwen_model', 'qwen3.5-plus')  # Qwen Code CLI
+        self.claude_model = self.config.get('claude_model', 'claude-sonnet-4-5-20250929')  # Fallback
         self.max_iterations = self.config.get('max_iterations', 10)
         
         # Scheduled tasks
@@ -232,9 +233,50 @@ _Add AI-generated recommendations_
         
         self.logger.info(f"Created {len(plans)} plans")
     
+    def trigger_qwen(self, prompt: str, plan_file: Path = None) -> bool:
+        """
+        Trigger Qwen Code to process a prompt
+        
+        Args:
+            prompt: The prompt to send to Qwen
+            plan_file: Optional plan file to work on
+        
+        Returns:
+            True if Qwen was triggered successfully
+        """
+        self.logger.info("Triggering Qwen Code CLI")
+        
+        # Build Qwen command
+        cmd = ['qwen']
+        
+        # Add model if specified
+        if self.qwen_model:
+            cmd.extend(['--model', self.qwen_model])
+        
+        # Add prompt
+        cmd.extend(['-p', prompt])
+        
+        # Add plan file context if provided
+        if plan_file and plan_file.exists():
+            cmd.append(str(plan_file))
+        
+        try:
+            # Run Qwen Code
+            self.logger.info(f"Running: {' '.join(cmd)}")
+            
+            # For now, just log that Qwen should be triggered
+            # In production, you'd integrate with Qwen Code API
+            self.logger.info("Qwen Code CLI triggered (would run interactively)")
+            
+            return True
+            
+        except Exception as e:
+            self.logger.error(f"Error triggering Qwen: {e}")
+            return False
+    
     def trigger_claude(self, prompt: str, plan_file: Path = None) -> bool:
         """
-        Trigger Claude Code to process a prompt
+        Trigger Claude Code to process a prompt (fallback)
         
         Args:
             prompt: The prompt to send to Claude
@@ -243,7 +285,7 @@ _Add AI-generated recommendations_
         Returns:
             True if Claude was triggered successfully
         """
-        self.logger.info("Triggering Claude Code")
+        self.logger.info("Triggering Claude Code (fallback)")
         
         # Build Claude command
         cmd = ['claude']

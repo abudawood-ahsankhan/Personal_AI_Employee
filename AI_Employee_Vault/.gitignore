@@ -1,174 +1,46 @@
-# ===========================================
-# SECURITY - Never commit sensitive files
-# ===========================================
+# Git Sync Configuration - Platinum Tier
+# This file ensures secrets are never synced between cloud and local
 
-# Environment files with credentials
+# NEVER sync these (security rule)
 .env
-.env.local
-.env.*.local
-
-# API tokens and credentials
-*.pem
-*.key
-credentials.json
-token.json
+*.env
+.env.*
 tokens/
-secrets/
-
-# Session files
-*.session
-session/
 whatsapp_session/
-browser_sessions/
+*.token
+*credentials*
+*secret*
+*password*
+oauth_creds.json
 
-# ===========================================
 # Python
-# ===========================================
-
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
 *.egg-info/
-.installed.cfg
-*.egg
+dist/
+build/
 
-# PyInstaller
-*.manifest
-*.spec
+# Node
+node_modules/
+npm-debug.log*
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# Virtual environments
-venv/
-ENV/
-env/
-.venv
-
-# ===========================================
-# IDE & Editors
-# ===========================================
-
-# VS Code
+# IDE
 .vscode/
-*.code-workspace
-
-# JetBrains IDEs
 .idea/
-
-# Sublime Text
-*.sublime-project
-*.sublime-workspace
-
-# Vim
 *.swp
 *.swo
-*~
 
-# Emacs
-*~
-\#*\#
-.*.auto-save-number
-
-# ===========================================
-# OS Files
-# ===========================================
-
-# macOS
+# OS
 .DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-# Windows
 Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
 
-# Linux
-*~
+# Health files
+.health/
+*.health.json
 
-# ===========================================
-# Logs & Temporary Files
-# ===========================================
-
-# Application logs
-Logs/*.log
-logs/
-*.log
-
-# Temporary files
+# Temp files
 tmp/
-temp/
-.tmp/
 *.tmp
-
-# Backup files
-*.bak
-*.backup
-*.old
-
-# ===========================================
-# Obsidian Specific (Optional)
-# ===========================================
-
-# Obsidian plugins (if not tracking in repo)
-.obsidian/plugins/
-
-# Obsidian sync conflicts
-*.conflict
-
-# ===========================================
-# Project Specific
-# ===========================================
-
-# Drop folder contents (optional - uncomment if desired)
-# Drop/*
-# Inbox/*
-
-# Processed files tracking
-.processed_hashes
-.file_registry.json
-
-# ===========================================
-# Documentation (Optional)
-# ===========================================
-
-# Keep these if you want them local only
-# Briefings/*.md
-# Accounting/*.md
